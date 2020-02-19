@@ -46,7 +46,14 @@
 					{
 						"name": "GET BBC",
 						"type": "WebActivity",
-						"dependsOn": [],
+						"dependsOn": [
+							{
+								"activity": "GET Git",
+								"dependencyConditions": [
+									"Succeeded"
+								]
+							}
+						],
 						"policy": {
 							"timeout": "7.00:00:00",
 							"retry": 0,
@@ -57,6 +64,24 @@
 						"userProperties": [],
 						"typeProperties": {
 							"url": "http://bbc.com",
+							"method": "GET",
+							"headers": {}
+						}
+					},
+					{
+						"name": "GET Git",
+						"type": "WebActivity",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"url": "http://github.com",
 							"method": "GET",
 							"headers": {}
 						}

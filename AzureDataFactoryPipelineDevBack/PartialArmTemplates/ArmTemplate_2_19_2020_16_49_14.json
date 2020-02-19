@@ -39,8 +39,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"url": "http://google.com",
-							"method": "GET",
-							"headers": {}
+							"method": "GET"
 						}
 					},
 					{
@@ -64,8 +63,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"url": "http://bbc.com",
-							"method": "GET",
-							"headers": {}
+							"method": "GET"
 						}
 					},
 					{
@@ -82,8 +80,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"url": "http://github.com",
-							"method": "GET",
-							"headers": {}
+							"method": "GET"
 						}
 					}
 				],
