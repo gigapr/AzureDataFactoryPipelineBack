@@ -63,7 +63,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "http://github.com"
+					"url": "http://github.com",
+					"method": "GET"
 				}
 			}
 		],
